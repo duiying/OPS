@@ -12,6 +12,7 @@ echo "===================================================="
 yum -y install net-tools
 yum -y install vim
 yum -y install wget
+yum -y install autoconf
 yum -y install gcc gcc-c++ make
 yum -y install git
 
