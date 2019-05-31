@@ -5,17 +5,14 @@ GREENCOLOR='\033[1;32m'
 NC='\033[0m'
 
 echo "===================================================="
-printf "${GREENCOLOR} common-software's install begin ${NC} \n"
+printf "${GREENCOLOR} firewalld's disable begin ${NC} \n"
 echo "===================================================="
 
-# 为了使用ifconfig命令, 需要安装net-tools
-yum -y install net-tools
-yum -y install vim
-yum -y install wget
-yum -y install autoconf
-yum -y install gcc gcc-c++ make
-yum -y install git
+# 关闭防火墙
+systemctl stop firewalld
+# 开机禁用防火墙
+systemctl disable firewalld
 
 echo "===================================================="
-printf "${GREENCOLOR} common-software's install finish ${NC} \n"
+printf "${GREENCOLOR} firewalld's disable finish ${NC} \n"
 echo "===================================================="
