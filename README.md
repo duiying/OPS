@@ -8,3 +8,4 @@
   - [通过yum安装Nginx](nginx-yum-install)
   - [通过yum安装MySQL5.7](mysql57-yum-install)
   - [安装docker、docker-compose](docker-yum-install)
+  - [删除所有容器和镜像](docker-rm-all)
