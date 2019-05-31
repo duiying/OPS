@@ -43,5 +43,5 @@ echo "===================================================="
 
 ### 执行
 ```shell
-bash nginx-yum-install.sh
+bash mysql57-yum-install.sh
 ```
