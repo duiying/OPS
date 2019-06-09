@@ -11,6 +11,6 @@ CONFDIR=`pwd`/conf
 docker run -d -p 3306:3306 \
 -e MYSQL_ROOT_PASSWORD=root \
 -v ${DATADIR}:/var/lib/mysql \
--v ${CONFDIR}:/etc/mysql \
+-v ${CONFDIR}/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
 --name mysql \
 mysql:5.7
