@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab8fa15-4487-4715-8f2e-093c026ec535" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docker/mysql57-docker-install/conf/mysqld.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql57-docker-install/conf/mysqld.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,23 +50,79 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1493806685">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="md" value="2" />
+          <entry key="sh" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="md" value="18" />
+          <entry key="sh" value="73" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="18" />
+          <entry key="PLAIN_TEXT" value="73" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/mysql57-docker-install/mysql57-docker-install.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" selection-end-column="9" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="230">
+                <caret line="10" column="39" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="39" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docker/mysql57-docker-install/conf/mysqld.cnf">
+        <entry file="file://$PROJECT_DIR$/docker-ce-yum-install/docker-ce-yum-install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="232">
+              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-yum-install/docker-yum-install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="29" column="59" lean-forward="true" selection-start-line="14" selection-end-line="29" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-ce-yum-install/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="207">
+                <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -94,10 +150,12 @@
         <option value="$PROJECT_DIR$/gitlab-yum-install/gitlab-yum-install.sh" />
         <option value="$PROJECT_DIR$/gitlab-yum-install/README.md" />
         <option value="C:/kfrj/phpstudy/PHPTutorial/WWW/wbt.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docker/mysql57-docker-install/mysql57-docker-install.sh" />
         <option value="$PROJECT_DIR$/docker/mysql57-docker-install/README.md" />
         <option value="$PROJECT_DIR$/docker/mysql57-docker-install/conf/mysqld.cnf" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/docker-ce-yum-install/README.md" />
+        <option value="$PROJECT_DIR$/docker-ce-yum-install/docker-ce-yum-install.sh" />
       </list>
     </option>
   </component>
@@ -125,36 +183,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="common-shells" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-shells" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="common-shells" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-shells" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="docker-ce-yum-install" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="common-shells" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-shells" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql57-docker-install" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-shells" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-shells" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql57-docker-install" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-shells" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-shells" type="462c0819:PsiDirectoryNode" />
-              <item name="docker-rm-all" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-shells" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-shells" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql57-yum-install" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="docker-yum-install" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,18 +205,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php-notes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wyx\Desktop\github\ops\docker-ce-yum-install" />
       <recent name="C:\Users\wyx\Desktop\github\common-shells\docker\mysql57-docker-install\conf" />
       <recent name="C:\Users\wyx\Desktop\github\common-shells\docker\mysql57-docker-install" />
       <recent name="C:\Users\wyx\Desktop\github\common-shells\gitlab-yum-install" />
       <recent name="C:\Users\wyx\Desktop\github\common-shells\firewalld-disable" />
-      <recent name="C:\Users\wyx\Desktop\github\common-shells\docker-rm-all" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,17 +243,18 @@
       <updated>1559264622930</updated>
       <workItem from="1559264624177" duration="27703000" />
       <workItem from="1559654902735" duration="8945000" />
+      <workItem from="1560323504202" duration="1227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36648000" />
+    <option name="totallyTimeSpent" value="37875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -241,13 +282,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docker-yum-install/docker-yum-install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-rm-all/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -377,13 +411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="322">
-            <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/docker/mysql57-docker-install/conf/mysqld.cnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -394,10 +425,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/mysql57-docker-install/conf/mysqld.cnf">
+    <entry file="file://$PROJECT_DIR$/docker-ce-yum-install/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="207">
+            <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="230">
+            <caret line="10" column="39" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-yum-install/docker-yum-install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="439">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="14" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-ce-yum-install/docker-ce-yum-install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
         </state>
       </provider>
     </entry>
