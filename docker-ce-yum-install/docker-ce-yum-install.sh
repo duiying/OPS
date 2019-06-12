@@ -21,7 +21,7 @@ yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 
 # 安装最新版的docker-ce
-yum install docker-ce docker-ce-cli containerd.io
+yum -y install docker-ce docker-ce-cli containerd.io
 
 # 配置阿里云docker镜像加速器
 mkdir -p /etc/docker
@@ -35,6 +35,14 @@ EOF
 systemctl daemon-reload
 systemctl restart docker
 
+# 安装docker-compose
+# 下载docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# 赋予可执行权限
+chmod +x /usr/local/bin/docker-compose
+
 echo "===================================================="
-docker_version=$(docker -v)
+docker -v
+docker-compose --version
 echo "===================================================="
