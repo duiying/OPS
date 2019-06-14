@@ -50,6 +50,10 @@ location: /var/log/harbor
 # 登录
 admin phpdev-pass
 ```
+启动/停止
+```
+docker-compose start/stop
+```
 
 #### 3. 使用
 ```
