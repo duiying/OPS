@@ -50,3 +50,12 @@ location: /var/log/harbor
 # 登录
 admin phpdev-pass
 ```
+
+#### 3. 使用
+```
+1. 创建 wyx 用户
+2. 创建 test 项目
+3. 为 test 项目添加 wyx 用户, 角色是项目管理员
+```
+![Harbor](https://raw.githubusercontent.com/duiying/img/master/Harbor.jpg)
+
