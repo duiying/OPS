@@ -57,5 +57,27 @@ admin phpdev-pass
 2. 创建 test 项目
 3. 为 test 项目添加 wyx 用户, 角色是项目管理员
 ```
-![Harbor](https://raw.githubusercontent.com/duiying/img/master/Harbor.jpg)
+![Harbor](https://raw.githubusercontent.com/duiying/img/master/Harbor.jpg)  
+
+登录报错
+```shell
+[root@localhost harbor]# docker login harbor.phpdev.com
+Username: wyx
+Password: 
+Error response from daemon: Get https://harbor.phpdev.com/v2/: dial tcp 192.168.246.128:443: connect: connection refused
+```
+这是由于默认docker registry使用的是https, 而目前的Harbor使用的是http, 解决方法如下
+```shell
+# 查找 docker.service 所在目录
+[root@localhost harbor]# find / -name docker.service -type f
+/usr/lib/systemd/system/docker.service
+# 增加 --insecure-registry harbor.phpdev.com:9010
+[root@localhost harbor]# vim /usr/lib/systemd/system/docker.service
+ExecStart=/usr/bin/dockerd --insecure-registry harbor.phpdev.com:9010 -H fd:// --containerd=/run/containerd/containerd.sock
+# 重新加载配置、重启docker
+systemctl daemon-reload
+systemctl restart docker
+```
+
+
 
