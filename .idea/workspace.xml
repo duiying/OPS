@@ -74,13 +74,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="797" />
+          <entry key="md" value="836" />
           <entry key="sh" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="797" />
+          <entry key="Markdown" value="836" />
           <entry key="PLAIN_TEXT" value="149" />
         </counts>
       </usages-collector>
@@ -104,8 +104,8 @@
         <entry file="file://$PROJECT_DIR$/harbor-install/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <first_editor relative-caret-position="529">
+                <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -268,12 +268,12 @@
       <workItem from="1559654902735" duration="8945000" />
       <workItem from="1560323504202" duration="5113000" />
       <workItem from="1560329262790" duration="4390000" />
-      <workItem from="1560466729242" duration="3308000" />
+      <workItem from="1560466729242" duration="3459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49459000" />
+    <option name="totallyTimeSpent" value="49610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -488,8 +488,8 @@
     <entry file="file://$PROJECT_DIR$/harbor-install/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <first_editor relative-caret-position="529">
+            <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>

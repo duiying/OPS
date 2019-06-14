@@ -46,3 +46,7 @@ location: /var/log/harbor
 ./install.sh
 ```
 配置hosts, 浏览器访问 http://harbor.phpdev.com:9010
+```shell
+# 登录
+admin phpdev-pass
+```
