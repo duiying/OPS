@@ -12,6 +12,7 @@
   - [删除所有容器和镜像](docker-rm-all)
   - [关闭并开机禁用firewalld](firewalld-disable)
   - [通过yum安装gitlab-ce-11.9.11](gitlab-ce-11.9.11-yum-install)
+  - [HARBOR的安装与配置](harbor-install)
   - Docker
     - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
     
