@@ -1,15 +1,15 @@
 # HARBOR的安装与配置
 
-官方地址
+#### 官方地址
 ```
 https://github.com/goharbor/harbor
 ```
   
 
-1. 安装docker 17.03.0-ce+ and docker-compose 1.18.0+  
+#### 1. 安装docker 17.03.0-ce+ and docker-compose 1.18.0+  
 [docker-ce-yum-install](../docker-ce-yum-install)
 
-2. 安装HARBOR
+#### 2. 安装HARBOR
 安装文档
 ```
 https://github.com/goharbor/harbor/blob/master/docs/installation_guide.md
