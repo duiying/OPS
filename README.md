@@ -13,6 +13,7 @@
   - [关闭并开机禁用firewalld](firewalld-disable)
   - [通过yum安装gitlab-ce-11.9.11](gitlab-ce-11.9.11-yum-install)
   - [Harbor的安装与配置](harbor-install)
+  - [通过源码安装redis5.0.5](redis5-src-install)
   - Docker
     - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
     
