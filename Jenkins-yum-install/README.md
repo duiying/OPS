@@ -59,17 +59,17 @@ sudo vi /etc/hosts
 
 ### 使用
 初始化界面  
-![jenkins-init](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-init.png)  
+![jenkins-init](https://raw.githubusercontent.com/duiying/img/master/jenkins-init.png)  
 开始界面  
-![jenkins-start](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-start.png)  
+![jenkins-start](https://raw.githubusercontent.com/duiying/img/master/jenkins-start.png)  
 正在安装插件界面  
-![jenkins-starting](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-starting.png)  
+![jenkins-starting](https://raw.githubusercontent.com/duiying/img/master/jenkins-starting.png)  
 创建第一个admin用户界面  
-![jenkins-admin](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-admin.png)  
+![jenkins-admin](https://raw.githubusercontent.com/duiying/img/master/jenkins-admin.png)  
 URL配置界面  
-![jenkins-url](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-url.png)  
+![jenkins-url](https://raw.githubusercontent.com/duiying/img/master/jenkins-url.png)  
 ready界面  
-![jenkins-ready](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-ready.png)  
+![jenkins-ready](https://raw.githubusercontent.com/duiying/img/master/jenkins-ready.png)  
 首页界面  
-![jenkins-index](https://raw.githubusercontent.com/duiying/note/master/img/jenkins-index.png)  
+![jenkins-index](https://raw.githubusercontent.com/duiying/img/master/jenkins-index.png)  
 
