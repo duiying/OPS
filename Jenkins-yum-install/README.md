@@ -5,9 +5,9 @@ Jenkins: Java开发的持续集成工具
 ### 安装与配置
 安装
 ```shell
-# 安装Java(需要1.8及以上)
+# 安装JDK(需要1.8及以上)
 yum install -y java
-# 查看Java版本
+# 查看JDK版本
 [root@localhost ~]# java -version
 openjdk version "1.8.0_191"
 OpenJDK Runtime Environment (build 1.8.0_191-b12)
