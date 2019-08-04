@@ -29,6 +29,7 @@ create database gogs DEFAULT CHARSET utf8mb4 COLLATE utf8_general_ci;
 
 ### 基本设置
 ![Gogs-base](https://raw.githubusercontent.com/duiying/img/master/Gogs-base.jpg)  
+重点关注：仓库根目录、域名、应用URL、日志路径。
 
 ### 可选设置
 ![Gogs-choose](https://raw.githubusercontent.com/duiying/img/master/Gogs-choose.jpg)   
