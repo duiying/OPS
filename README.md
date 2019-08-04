@@ -15,6 +15,8 @@
   - [Harbor的安装与配置](harbor-install)
   - [通过源码安装redis5.0.5](redis5-src-install)
   - [Jenkins的安装与配置](Jenkins-yum-install)
+  
   - Docker
     - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
+    - [Gogs的搭建](docker/Gogs-docker-install)
     
