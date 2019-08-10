@@ -24,7 +24,7 @@ docker start gogs
 ![Gogs-db](https://raw.githubusercontent.com/duiying/img/master/Gogs-db.jpg)  
 因此，需要有个DB服务，我这里用的是MySQL。  
 ```sql
-create database gogs DEFAULT CHARSET utf8mb4 COLLATE utf8_general_ci;
+create database gogs DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
 ```
 
 ### 基本设置
