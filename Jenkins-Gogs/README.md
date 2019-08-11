@@ -5,7 +5,7 @@ Jenkins的简单使用，持续集成Gogs。
 
 配置任务名称、描述、环境参数。  
 ![Jenkins-create](https://raw.githubusercontent.com/duiying/img/master/Jenkins-create.jpg)  
-配置部署类型  
+配置部署类型、Git源码存放路径。  
 ![Jenkins-deploy](https://raw.githubusercontent.com/duiying/img/master/Jenkins-deploy.jpg)  
 配置Git仓库地址  
 ![Jenkins-Git](https://raw.githubusercontent.com/duiying/img/master/Jenkins-Git.jpg)  
