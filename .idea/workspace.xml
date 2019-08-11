@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab8fa15-4487-4715-8f2e-093c026ec535" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/Gogs-docker-install/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Gogs-docker-install/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkins-Gogs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkins-Gogs/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,25 +63,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="47" />
+          <entry key="md" value="48" />
           <entry key="sh" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="47" />
+          <entry key="Markdown" value="48" />
           <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2501" />
+          <entry key="md" value="2509" />
           <entry key="sh" value="340" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2501" />
+          <entry key="Markdown" value="2509" />
           <entry key="PLAIN_TEXT" value="340" />
         </counts>
       </usages-collector>
@@ -107,8 +105,8 @@
         <entry file="file://$PROJECT_DIR$/Jenkins-Gogs/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="687">
-                <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <first_editor relative-caret-position="115">
+                <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -195,6 +193,11 @@
             <path>
               <item name="ops" type="b2602c69:ProjectViewProjectNode" />
               <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="harbor-install" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
               <item name="Jenkins-Gogs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,12 +258,12 @@
       <workItem from="1560576982620" duration="1529000" />
       <workItem from="1561269521188" duration="7455000" />
       <workItem from="1564844706508" duration="12177000" />
-      <workItem from="1565421640345" duration="5534000" />
+      <workItem from="1565421640345" duration="5636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84359000" />
+    <option name="totallyTimeSpent" value="84461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -279,7 +282,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.14875136" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44625407" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -516,16 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/harbor-install/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -536,11 +529,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/harbor-install/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="2" selection-start-column="2" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Jenkins-Gogs/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="687">
-            <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <first_editor relative-caret-position="115">
+            <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

@@ -1,6 +1,7 @@
 # Jenkins的简单使用
-
-Jenkins的简单使用，持续集成Gogs。  
+```
+Jenkins的简单使用，持续集成Gogs。
+```
 
 配置任务名称、描述、环境参数。  
 ![Jenkins-create](https://raw.githubusercontent.com/duiying/img/master/Jenkins-create.jpg)  
