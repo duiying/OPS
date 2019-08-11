@@ -29,7 +29,10 @@ create database gogs DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
 
 ### 基本设置
 ![Gogs-base](https://raw.githubusercontent.com/duiying/img/master/Gogs-base.jpg)  
-重点关注：仓库根目录、域名、应用URL、日志路径。
+由于宿主机的/var/gogs目录与容器的/data目录之间的映射关系，因此目录的设置如下
+- 仓库根目录：/data/git/gogs-repositories
+- 应用URL：http://gogs.phpedu.club:10080/
+- 日志路径：/data/gogs/log
 
 ### 可选设置
 ![Gogs-choose](https://raw.githubusercontent.com/duiying/img/master/Gogs-choose.jpg)   

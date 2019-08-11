@@ -15,6 +15,7 @@
   - [Harbor的安装与配置](harbor-install)
   - [通过源码安装redis5.0.5](redis5-src-install)
   - [Jenkins的安装与配置](Jenkins-yum-install)
+  - [Jenkins的简单使用](Jenkins-Gogs)
   - [通过yum安装PHP7](PHP7-yum-install)
   
   - Docker
