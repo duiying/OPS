@@ -17,6 +17,7 @@
   - [Jenkins的安装与配置](Jenkins-yum-install)
   - [Jenkins的简单使用](Jenkins-Gogs)
   - [通过yum安装PHP7](PHP7-yum-install)
+  - [Supervisor的安装与使用](Supervisor)
   
   - Docker
     - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
