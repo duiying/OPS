@@ -1,5 +1,18 @@
 # Supervisor的安装与使用
 
+## 目录
+- [介绍](#介绍)
+- [安装](#安装)
+- [配置](#配置)
+- [常见命令](#常见命令)
+- [如何卸载](#如何卸载)
+- [Supervisor如何定期重启指定进程](#Supervisor如何定期重启指定进程)
+
+### 介绍
+Supervisor是用Python开发的一个客户机/服务器系统，允许用户监视和控制UNIX类操作系统上的多个进程。  
+功能包括监听、启动、停止、重启一个或多个进程。当Supervisor管理的进程出现意外被Kill后，Supervisor监听到事件会自动启动该进程，不需要再写其他脚本去进行重启处理。  
+关于Supervisor的安装及设定，可以参考Supervisor官网地址：http://supervisord.org/   
+
 ### 安装
 ```bash
 # 安装Python的打包分发工具setuptools
@@ -128,6 +141,12 @@ supervisorctl -c /etc/supervisord.conf start all
 # 停止所有进程
 supervisorctl -c /etc/supervisord.conf stop all
 ```
+### Supervisor如何定期重启指定进程
+每小时重启指定进程
+```bash
+0 * * * * supervisorctl -c /etc/supervisord.conf restart program_name
+```
+当对于某些会出现内存泄漏或连接不自动释放的进程时，我们可以使用以上方法进行定期重启，解决内存泄漏及释放连接数。
 
 ### 如何卸载
 ```bash
