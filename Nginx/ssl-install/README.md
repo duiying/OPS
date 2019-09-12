@@ -1,5 +1,5 @@
 # Nginx安装ssl证书
-1、以腾讯云为例，去SSL证书管理控制台：https://console.cloud.tencent.com/ssl下载并解压缩证书文件包到本地目录。  
+1、以腾讯云为例，去SSL证书管理控制台：https://console.cloud.tencent.com/ssl 下载并解压缩证书文件包到本地目录。  
 
 2.、解压缩后，可获得相关类型的证书文件。其中包含Nginx文件夹和CSR文件。
 ```
