@@ -15,9 +15,9 @@ yum install -y  yum-utils \
                 device-mapper-persistent-data \
                 lvm2
 
-# 设置存储库，考虑到速度问题，这里采用的是阿里云
-# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+# 设置存储库
+# 阿里云 http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 # 安装最新版的docker-ce
 yum -y install docker-ce docker-ce-cli containerd.io
@@ -35,8 +35,8 @@ systemctl daemon-reload
 systemctl restart docker
 
 # 安装docker-compose
-# 下载docker-compose
-wget https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64
+# 下载docker-compose(由于下载速度过慢，提前已经下载完成)
+# wget https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64
 mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
 
 # 赋予可执行权限
