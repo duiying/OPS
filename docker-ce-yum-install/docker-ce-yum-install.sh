@@ -15,10 +15,9 @@ yum install -y  yum-utils \
                 device-mapper-persistent-data \
                 lvm2
 
-# 设置存储库
-yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
+# 设置存储库，考虑到速度问题，这里采用的是阿里云
+# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 
 # 安装最新版的docker-ce
 yum -y install docker-ce docker-ce-cli containerd.io
