@@ -18,11 +18,13 @@
   - [Jenkins的简单使用](Jenkins-Gogs)
   - [通过yum安装PHP7](PHP7-yum-install)
   - [Supervisor的安装与使用](Supervisor)
-  
-  - Docker
-    - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
-    - [Gogs的搭建](docker/Gogs-docker-install)
-    - [Nginx的搭建](docker/Nginx-docker-install)
+  - [Supervisor的安装与使用](Supervisor)
+  - [PostgreSQL的安装](PostgreSQL)
+  - [Sentry的安装与使用](Sentry)
+- Docker
+  - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
+  - [Gogs的搭建](docker/Gogs-docker-install)
+  - [Nginx的搭建](docker/Nginx-docker-install)
     
 - Nginx
     - [Nginx安装ssl证书](Nginx/ssl-install)
