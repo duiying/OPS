@@ -230,7 +230,7 @@ SENTRY_CONF=/etc/sentry sentry run web
 ```bash
 SENTRY_CONF=/etc/sentry sentry run worker
 ```
-
+访问：http://ip:9000
 ### 总结
 安装过程多去参考官方文档：https://docs.sentry.io/server/installation/python/  
  
@@ -240,7 +240,9 @@ virtualenv要了解
 
 PostgreSQL要了解  
 
-遇到问题多谷歌
+遇到问题多谷歌，看GitHub的issue  
+
+
 
 
 
