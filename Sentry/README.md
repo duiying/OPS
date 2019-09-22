@@ -1,9 +1,18 @@
-# Sentry的安装与使用
+# Sentry的安装
 
 ## 目录
 - [简介](#简介)
 - [依赖](#依赖)
 - [安装](#安装)
+  - [Redis相关安装](#Redis相关安装)
+  - [PostgreSQL相关安装](#PostgreSQL相关安装)
+  - [Python相关安装](#Python相关安装)
+  - [其它依赖软件相关安装](#其它依赖软件相关安装)
+  - [Sentry安装相关](#Sentry安装相关)
+  - [配置文件相关](#配置文件相关)
+  - [运行迁移相关](#运行迁移相关)
+  - [启动服务](#启动服务)
+- [总结](#总结)
 
 ### 简介
 Sentry 是一个开源的实时错误报告工具，支持 web 前后端、移动应用以及游戏，支持 Python、OC、Java、Go、Node、Django、RoR 等主流编程语言和框架 ，还提供了 GitHub、Slack、Trello 等常见开发工具的集成。
@@ -149,6 +158,8 @@ django.db.utils.OperationalError: FATAL:  Ident authentication failed for user "
 ```
 这是由于PostgreSQL的认证导致，解决：
 ```bash
+# vim /var/lib/pgsql/9.6/data/pg_hba.conf
+
 # "local" is for Unix domain socket connections only
 local   all             all                                     peer
 # IPv4 local connections:
@@ -219,3 +230,7 @@ SENTRY_CONF=/etc/sentry sentry run web
 ```bash
 SENTRY_CONF=/etc/sentry sentry run worker
 ```
+
+### 总结
+安装过程多去参考官方文档：https://docs.sentry.io/server/installation/python/  
+
