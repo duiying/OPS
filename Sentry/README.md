@@ -233,4 +233,15 @@ SENTRY_CONF=/etc/sentry sentry run worker
 
 ### 总结
 安装过程多去参考官方文档：https://docs.sentry.io/server/installation/python/  
+ 
+搭建Sentry尽量使用内存大于1g的机器  
+
+virtualenv要了解  
+
+PostgreSQL要了解  
+
+遇到问题多谷歌
+
+
+
 
