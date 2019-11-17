@@ -25,6 +25,7 @@
   - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
   - [Gogs的搭建](docker/Gogs-docker-install)
   - [Nginx的搭建](docker/Nginx-docker-install)
+  - [RabbitMQ的搭建](docker/RabbitMQ-docker-install)
     
 - Nginx
     - [Nginx安装ssl证书](Nginx/ssl-install)
