@@ -1,7 +1,5 @@
 # SSH免密码登录
 
-### 脚本内容
-
 ```shell
 #!/usr/bin/expect
 
