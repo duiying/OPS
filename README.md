@@ -21,6 +21,7 @@
   - [Supervisor的安装与使用](Supervisor)
   - [PostgreSQL的安装](PostgreSQL)
   - [Sentry的安装](Sentry)
+  - [CentOS7搭建samba实现与Win共享目录](samba)
   
 - Docker
   - [通过Docker安装MySQL5.7](docker/mysql57-docker-install)
