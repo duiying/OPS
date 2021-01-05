@@ -18,7 +18,6 @@
   - [Jenkins的简单使用](Jenkins-Gogs)
   - [通过yum安装PHP7](PHP7-yum-install)
   - [Supervisor的安装与使用](Supervisor)
-  - [Supervisor的安装与使用](Supervisor)
   - [PostgreSQL的安装](PostgreSQL)
   - [Sentry的安装](Sentry)
   - [CentOS7搭建samba实现与Win共享目录](samba)
