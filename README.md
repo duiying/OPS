@@ -1,4 +1,4 @@
-<h1 align="center"> ops </h1>
+<h1 align="center"> OPS </h1>
 <p align="center"> 
 软件安装、环境部署、一键脚本等 
 </p>
@@ -28,6 +28,7 @@
   - [Gogs的搭建](docker/Gogs-docker-install)
   - [Nginx的搭建](docker/Nginx-docker-install)
   - [RabbitMQ的搭建](docker/RabbitMQ-docker-install)
+  - [MySQL主从复制](https://github.com/duiying/dockerfiles/tree/master/mysql-master-slave)
   
 - 常用脚本
   - [SSH免密码登录](Script/auto-password-ssh-login)
