@@ -1,4 +1,4 @@
-# SSH免密码登录
+# SSH 免密码登录
 
 ```shell
 #!/usr/bin/expect

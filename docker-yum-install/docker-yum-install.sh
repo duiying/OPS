@@ -8,18 +8,18 @@ echo "===================================================="
 printf "${GREENCOLOR} Docker's install begin ${NC} \n"
 echo "===================================================="
 
-# 安装EPEL
+# 安装 EPEL
 yum -y install epel-release
-# 安装docker和docker-compose
+# 安装 docker 和 docker-compose
 yum -y install docker docker-compose
-# 配置阿里云docker镜像加速器
+# 配置阿里云 docker 镜像加速器
 mkdir -p /etc/docker
 tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://8auvmfwy.mirror.aliyuncs.com"]
 }
 EOF
-# 重新加载配置、重启docker
+# 重新加载配置、重启 docker
 systemctl daemon-reload
 systemctl restart docker
 

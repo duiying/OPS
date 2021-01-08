@@ -1,12 +1,15 @@
-# 安装Nginx
+# 安装 Nginx
 
 ### 脚本描述
+
 ```
-使用yum安装Nginx并启动
+使用 yum 安装 Nginx 并启动
 ```
 
 ### 脚本内容
-[nginx-yum-install.sh](nginx-yum-install.sh)
+
+[nginx-yum-install.sh](nginx-yum-install.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -21,16 +24,16 @@ echo "===================================================="
 printf "${GREENCOLOR} Nginx's install begin ${NC} \n"
 echo "===================================================="
 
-# 安装Nginx
+# 安装 Nginx
 # 进入目录
 cd $DOWNLOAD_DIR
-# 下载Nginx包
+# 下载 Nginx 包
 wget $SOURCE_DIR
-# 安装Nginx的yum源
+# 安装 Nginx 的 yum 源
 rpm -ivh nginx-release-centos-7-0.el7.ngx.noarch.rpm
-# 安装Nginx
+# 安装 Nginx
 yum -y install nginx
-# 启动Nginx
+# 启动 Nginx
 service nginx restart
 
 echo "===================================================="
@@ -39,6 +42,7 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash nginx-yum-install.sh
 ```

@@ -1,16 +1,20 @@
-# 安装docker-ce
+# 安装 docker-ce
 
 ### 脚本描述
+
 ```
-使用yum安装安装docker-ce最新版和docker-compose
+使用 yum 安装安装 docker-ce 最新版和 docker-compose
 ```
 
 ### 官方文档
+
 - [https://docs.docker.com/install/linux/docker-ce/centos/](https://docs.docker.com/install/linux/docker-ce/centos/)
 - [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 ### 脚本内容
-[docker-ce-yum-install.sh](docker-ce-yum-install.sh)
+
+[docker-ce-yum-install.sh](docker-ce-yum-install.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -33,10 +37,10 @@ yum install -y  yum-utils \
 # 阿里云 http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
-# 安装最新版的docker-ce
+# 安装最新版的 docker-ce
 yum -y install docker-ce docker-ce-cli containerd.io
 
-# 配置阿里云docker镜像加速器
+# 配置阿里云 docker 镜像加速器
 mkdir -p /etc/docker
 tee /etc/docker/daemon.json <<-'EOF'
 {
@@ -44,12 +48,12 @@ tee /etc/docker/daemon.json <<-'EOF'
 }
 EOF
 
-# 重新加载配置、重启docker
+# 重新加载配置、重启 docker
 systemctl daemon-reload
 systemctl restart docker
 
-# 安装docker-compose
-# 下载docker-compose(由于下载速度过慢，提前已经下载完成)
+# 安装 docker-compose
+# 下载 docker-compose（由于下载速度过慢，提前已经下载完成）
 # wget https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64
 mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
 
@@ -63,6 +67,7 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash docker-ce-yum-install.sh
 ```

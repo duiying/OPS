@@ -20,6 +20,6 @@ make
 # 安装
 make install
 
-# 启动redis服务端
+# 启动 redis 服务端
 cd src
 ./redis-server

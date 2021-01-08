@@ -1,7 +1,9 @@
-# Nginx安装ssl证书
-1、以腾讯云为例，去SSL证书管理控制台：https://console.cloud.tencent.com/ssl 下载并解压缩证书文件包到本地目录。  
+# Nginx 安装 ssl 证书
 
-2.、解压缩后，可获得相关类型的证书文件。其中包含Nginx文件夹和CSR文件。
+1、以腾讯云为例，去 SSL 证书管理控制台：https://console.cloud.tencent.com/ssl 下载并解压缩证书文件包到本地目录。  
+
+2.、解压缩后，可获得相关类型的证书文件。其中包含 Nginx 文件夹和 CSR 文件。  
+
 ```
 文件夹名称：Nginx
 文件夹内容：
@@ -12,7 +14,9 @@ CSR 文件内容： www.domain.com.csr 文件
 说明：CSR 文件是申请证书时由您上传或系统在线生成的，提供给 CA 机构。安装时可忽略该文件。
     
 3、将已获取到的 1_www.domain.com_bundle.crt 证书文件和 2_www.domain.com.key 私钥文件从本地拷贝到服务器的某个目录下。  
-4、Nginx配置：
+
+4、Nginx 配置：  
+
 ```
 server {
     listen 443;
@@ -42,12 +46,13 @@ server {
 server {
     listen 80;
     server_name phpedu.club www.phpedu.club;
-    # 把http的域名请求转成https
+    # 把 http 的域名请求转成 https
     rewrite ^(.*)$ https://$host$1 permanent;
 }
 ```
-5、重启Nginx。
 
+5、重启Nginx。  
 
 ### 参考
+
 - [https://cloud.tencent.com/document/product/400/35244](https://cloud.tencent.com/document/product/400/35244)

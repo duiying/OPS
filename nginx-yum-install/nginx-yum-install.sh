@@ -11,16 +11,16 @@ echo "===================================================="
 printf "${GREENCOLOR} Nginx's install begin ${NC} \n"
 echo "===================================================="
 
-# 安装Nginx
+# 安装 Nginx
 # 进入目录
 cd $DOWNLOAD_DIR
-# 下载Nginx包
+# 下载 Nginx 包
 wget $SOURCE_DIR
-# 安装Nginx的yum源
+# 安装 Nginx 的 yum 源
 rpm -ivh nginx-release-centos-7-0.el7.ngx.noarch.rpm
-# 安装Nginx
+# 安装 Nginx
 yum -y install nginx
-# 启动Nginx
+# 启动 Nginx
 service nginx restart
 
 echo "===================================================="

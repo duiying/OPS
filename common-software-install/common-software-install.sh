@@ -8,7 +8,7 @@ echo "===================================================="
 printf "${GREENCOLOR} common-software's install begin ${NC} \n"
 echo "===================================================="
 
-# 为了使用ifconfig命令, 需要安装net-tools
+# 为了使用 ifconfig 命令, 需要安装 net-tools
 yum -y install net-tools
 yum -y install vim
 yum -y install wget

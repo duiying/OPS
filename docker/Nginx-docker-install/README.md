@@ -1,12 +1,14 @@
-# Nginx的搭建
+# Nginx 的搭建
 
 ### 脚本描述
 ```
-通过Docker搭建Nginx
+通过 Docker 搭建 Nginx
 ```
 
 ### 脚本内容
-[nginx-docker-install.sh](nginx-docker-install.sh)
+
+[nginx-docker-install.sh](nginx-docker-install.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -24,6 +26,7 @@ nginx
 ```
 
 ### 执行
+
 ```shell
 bash nginx-docker-install.sh
 ```

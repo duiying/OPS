@@ -1,12 +1,15 @@
-# 关闭并开机禁用firewalld
+# 关闭并开机禁用 firewalld
 
 ### 脚本描述
+
 ```
-关闭并开机禁用firewalld
+关闭并开机禁用 firewalld
 ```
 
 ### 脚本内容
-[firewalld-disable.sh](firewalld-disable.sh)
+
+[firewalld-disable.sh](firewalld-disable.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -29,6 +32,7 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash firewalld-disable.sh
 ```

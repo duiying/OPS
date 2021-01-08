@@ -1,12 +1,14 @@
 # 删除所有容器和镜像
 
 ### 脚本描述
+
 ```
 删除所有容器和镜像
 ```
 
 ### 脚本内容
-[docker-rm-all.sh](docker-rm-all.sh)
+[docker-rm-all.sh](docker-rm-all.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -29,6 +31,7 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash docker-rm-all.sh
 ```

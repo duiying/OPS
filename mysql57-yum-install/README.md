@@ -1,12 +1,15 @@
-# 安装Mysql
+# 安装 Mysql
 
 ### 脚本描述
+
 ```
-使用yum安装MySQL5.7并启动
+使用 yum 安装 MySQL5.7 并启动
 ```
 
 ### 脚本内容
-[mysql57-yum-install.sh](mysql57-yum-install.sh)
+
+[mysql57-yum-install.sh](mysql57-yum-install.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -21,18 +24,18 @@ echo "===================================================="
 printf "${GREENCOLOR} MySQL's install begin ${NC} \n"
 echo "===================================================="
 
-# 安装MySQL
-# 如果安装过MySQL, 先卸载
+# 安装 MySQL
+# 如果安装过 MySQL, 先卸载
 yum -y remove mysql
 # 进入目录
 cd $DOWNLOAD_DIR
-# 下载MySQL包
+# 下载 MySQL 包
 wget $SOURCE_DIR
-# 安装MySQL的yum源
+# 安装 MySQL 的 yum 源
 rpm -ivh mysql57-community-release-el7-8.noarch.rpm
-# 安装MySQL
+# 安装 MySQL
 yum -y install mysql-community-server
-# 启动MySQL
+# 启动 MySQL
 service mysqld start
 
 echo "===================================================="
@@ -42,6 +45,7 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash mysql57-yum-install.sh
 ```

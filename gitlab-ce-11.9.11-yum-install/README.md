@@ -1,6 +1,7 @@
-# 通过yum安装gitlab-ce-11.9.11
+# 通过 yum 安装 gitlab-ce-11.9.11
 
 ## 目录
+
 - [脚本描述](#脚本描述)
 - [准备工作](#准备工作)
 - [脚本内容](#脚本内容)
@@ -8,12 +9,15 @@
 - [测试](#测试)
 
 ### 脚本描述
+
 ```
-通过yum安装GitLab
+通过 yum 安装 GitLab
 ```
 
 ### 准备工作
-关闭selinux
+
+关闭 selinux  
+
 ```shell
 # 编辑配置文件
 vim /etc/sysconfig/selinux
@@ -23,7 +27,9 @@ reboot
 ```
 
 ### 脚本内容
-[gitlab-ce-11.9.11-yum-install](gitlab-ce-11.9.11-yum-install.sh)
+
+[gitlab-ce-11.9.11-yum-install](gitlab-ce-11.9.11-yum-install.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -34,7 +40,7 @@ NC='\033[0m'
 DOWNLOAD_DIR="/usr/src"
 SOURCE_DIR="https://mirror.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-11.9.11-ce.0.el7.x86_64.rpm"
 
-# GitLab的主机和端口
+# GitLab 的主机和端口
 HOST="gitlab.phpdev.com"
 PORT="8088"
 
@@ -50,9 +56,9 @@ systemctl stop firewalld
 # 开机禁用防火墙
 systemctl disable firewalld
 
-# 安装postfix邮件服务依赖
+# 安装 postfix 邮件服务依赖
 yum -y install postfix
-# 启动postfix并设置为开机启用
+# 启动 postfix 并设置为开机启用
 systemctl start postfix && systemctl enable postfix
 
 # 安装其它依赖
@@ -60,11 +66,11 @@ yum -y install curl policycoreutils policycoreutils-python openssh-server openss
 
 # 进入目录
 cd $DOWNLOAD_DIR
-# 下载GitLab包
+# 下载 GitLab 包
 wget $SOURCE_DIR
-# 安装GitLab的yum源
+# 安装 GitLab 的 yum 源
 rpm -ivh gitlab-ce-11.9.11-ce.0.el7.x86_64.rpm
-# 安装GitLab
+# 安装 GitLab
 yum -y install gitlab-ce
 
 # 备份配置文件
@@ -74,7 +80,7 @@ sed -i "s/external_url 'http:\/\/gitlab.example.com'/external_url 'http:\/\/${HO
 # 使配置生效
 gitlab-ctl reconfigure
 
-# 启动GitLab
+# 启动 GitLab
 gitlab-ctl start
 
 echo "===================================================="
@@ -83,12 +89,14 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash gitlab-ce-11.9.11-yum-install.sh
 ```
 
 ### 测试
+
 ```
-1. 本机hosts添加一行 192.168.246.128 gitlab.phpdev.com
+1. 本机 hosts 添加一行 192.168.246.128 gitlab.phpdev.com
 2. 浏览器访问 http://gitlab.phpdev.com:8088
 ```

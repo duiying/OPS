@@ -1,12 +1,14 @@
-# 安装docker、docker-compose
+# 安装 docker、docker-compose
 
 ### 脚本描述
 ```
-使用yum安装安装docker、docker-compose并启动docker, 同时配置阿里云docker镜像加速器.
+使用 yum 安装安装 docker、docker-compose 并启动 docker, 同时配置阿里云 docker 镜像加速器.
 ```
 
 ### 脚本内容
-[docker-yum-install.sh](docker-yum-install.sh)
+
+[docker-yum-install.sh](docker-yum-install.sh)  
+
 ```shell
 #!/bin/bash
 
@@ -18,18 +20,18 @@ echo "===================================================="
 printf "${GREENCOLOR} Docker's install begin ${NC} \n"
 echo "===================================================="
 
-# 安装EPEL
+# 安装 EPEL
 yum -y install epel-release
 # 安装docker和docker-compose
 yum -y install docker docker-compose
-# 配置阿里云docker镜像加速器
+# 配置阿里云 docker 镜像加速器
 mkdir -p /etc/docker
 tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://8auvmfwy.mirror.aliyuncs.com"]
 }
 EOF
-# 重新加载配置、重启docker
+# 重新加载配置、重启 docker
 systemctl daemon-reload
 systemctl restart docker
 
@@ -41,6 +43,7 @@ echo "===================================================="
 ```
 
 ### 执行
+
 ```shell
 bash docker-yum-install.sh
 ```

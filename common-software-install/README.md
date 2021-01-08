@@ -1,8 +1,8 @@
-# CentOS7初始化
+# CentOS7 初始化
 
 ### 脚本描述
 ```
-纯净的CentOS7系统, 需要安装一些常用的软件, 如git、vim等.
+纯净的 CentOS7 系统, 需要安装一些常用的软件, 如 git、vim 等.
 ```
 
 ### 脚本内容
@@ -18,7 +18,7 @@ echo "===================================================="
 printf "${GREENCOLOR} common-software's install begin ${NC} \n"
 echo "===================================================="
 
-# 为了使用ifconfig命令, 需要安装net-tools
+# 为了使用 ifconfig 命令, 需要安装 net-tools
 yum -y install net-tools
 yum -y install vim
 yum -y install wget

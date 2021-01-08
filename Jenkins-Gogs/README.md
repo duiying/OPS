@@ -1,16 +1,24 @@
-# Jenkins的简单使用
+# Jenkins 的简单使用
 ```
-Jenkins的简单使用，持续集成Gogs。
+Jenkins 的简单使用，持续集成 Gogs。
 ```
 
-配置任务名称、描述、环境参数。  
-![Jenkins-create](https://raw.githubusercontent.com/duiying/img/master/Jenkins-create.jpg)  
-配置部署类型、Git源码存放路径。  
+配置任务名称、描述、环境参数。   
+ 
+![Jenkins-create](https://raw.githubusercontent.com/duiying/img/master/Jenkins-create.jpg)   
+
+配置部署类型、Git源码存放路径。   
+
 ![Jenkins-deploy](https://raw.githubusercontent.com/duiying/img/master/Jenkins-deploy.jpg)  
-配置Git仓库地址  
+
+配置 Git 仓库地址  
+
 ![Jenkins-Git](https://raw.githubusercontent.com/duiying/img/master/Jenkins-Git.jpg)  
-定义Shell
+
+定义 Shell  
+
 ![Jenkins-Shell](https://raw.githubusercontent.com/duiying/img/master/Jenkins-Shell.jpg)  
+
 ```bash
 #!/bin/sh
 
@@ -28,7 +36,9 @@ elif [[ "$deploy_type" == "code_update" ]]; then
     echo "[INFO] code update ..."
 fi
 ```
+
 控制台输出
+
 ```bash
 Started by user admin
 Running as SYSTEM
