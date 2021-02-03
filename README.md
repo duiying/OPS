@@ -4,6 +4,7 @@
 </p>
 
 - CentOS7
+
   - [CentOS7 初始化](common-software-install)
   - [通过 yum 安装 Nginx](nginx-yum-install)
   - [通过 yum 安装 MySQL5.7](mysql57-yum-install)
@@ -23,16 +24,21 @@
   - [CentOS7 搭建 samba 实现与 Win 共享目录](samba)
   
 - Docker
+
   - [通过 Docker 安装 MySQL5.7](docker/mysql57-docker-install)
   - [Gogs 的搭建](docker/Gogs-docker-install)
   - [Nginx 的搭建](docker/Nginx-docker-install)
   - [RabbitMQ 的搭建](docker/RabbitMQ-docker-install)
   - [MySQL 主从复制](https://github.com/duiying/dockerfiles/tree/master/mysql-master-slave)
+  - [MySQL 主从复制](https://github.com/duiying/dockerfiles/tree/master/mysql-master-slave)
+  - [搭建 Redis-Cluster 三主三从以及集群的扩容缩容](https://github.com/duiying/dockerfiles/tree/master/redis-cluster)
   
 - 常用脚本
+
   - [SSH 免密码登录](Script/auto-password-ssh-login)
     
 - Nginx
+
     - [Nginx 安装 ssl 证书](Nginx/ssl-install)
     
     
