@@ -15,8 +15,8 @@
   - pcntl
   - sockets
   - xml
-  - swoole（请编译最新版本，要求支持协程和 https）
-  - redis
+  - Swoole（请编译最新版本，要求支持协程和 https）
+  - Redis
   - msgpack
   - rdkafka
   - uuid
@@ -222,6 +222,47 @@ phpinfo();
 ```
 
 此时，可以访问：`IP:8000`，可以看到 phpinfo 的内容了。  
+
+### 常用命令
+
+如何启动 `php-fpm`？  
+
+```sh
+/home/work/service/php80/sbin/php-fpm
+```
+
+如何重启 `php-fpm`？  
+     
+```sh
+ps -ef | grep fpm
+kill -USR2 pid
+```
+
+如何启动 Nginx？  
+
+```sh
+/home/work/service/nginx/sbin/nginx -c /home/work/service/nginx/conf/nginx.conf
+```
+
+如何重启 Nginx？  
+
+```sh
+/home/work/service/nginx/sbin/nginx -c /home/work/service/nginx/conf/nginx.conf -s reload
+```
+
+### 安装 Redis 扩展
+
+```bash
+cd /home/work/lib/
+wget https://pecl.php.net/get/redis-5.3.4.tgz && tar -xvf redis-5.3.4.tgz && cd /home/work/lib/redis-5.3.4/
+/home/work/service/php80/bin/phpize
+./configure --with-php-config=/home/work/service/php80/bin/php-config
+sed -i '$a \\nextension=redis.so' /home/work/service/php80/etc/php.ini
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Redis 扩展。  
+
+### 安装 apcu 扩展
 
 
 
