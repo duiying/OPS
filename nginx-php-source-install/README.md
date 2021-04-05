@@ -43,6 +43,7 @@ yum -y install libpng libpng-devel
 yum -y install libjpeg libjpeg-devel libjpeg-turbo libjpeg-turbo-devel
 yum -y install freetype freetype-devel
 yum -y install oniguruma oniguruma-devel
+yum -y install libuuid libuuid-devel
 ```
 
 新建一个 work 账户：  
@@ -223,6 +224,101 @@ phpinfo();
 
 此时，可以访问：`IP:8000`，可以看到 phpinfo 的内容了。  
 
+### 安装 Redis 扩展
+
+```bash
+cd /home/work/lib/
+wget https://pecl.php.net/get/redis-5.3.4.tgz && tar -xvf redis-5.3.4.tgz && cd /home/work/lib/redis-5.3.4/
+/home/work/service/php80/bin/phpize
+./configure --with-php-config=/home/work/service/php80/bin/php-config
+sed -i '$a \\nextension=redis.so' /home/work/service/php80/etc/php.ini
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Redis 扩展。  
+
+### 安装 apcu 扩展
+
+```sh
+[work@VM-0-9-centos redis-5.3.4]$ cd /home/work/lib/
+[work@VM-0-9-centos lib]$ wget https://pecl.php.net/get/apcu-5.1.20.tgz && tar -xvf apcu-5.1.20.tgz && cd /home/work/lib/apcu-5.1.20/
+[work@VM-0-9-centos apcu-5.1.20]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos apcu-5.1.20]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
+[work@VM-0-9-centos apcu-5.1.20]$ make && make install
+# 在 /home/work/service/php80/etc/php.ini 配置文件最后一行增加
+extension=apcu.so
+apc.enabled=on
+apc.shm_size=64M
+apc.enable_cli=on
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 apcu 扩展。  
+
+### 安装 msgpack 扩展
+
+```bash
+[work@VM-0-9-centos redis-5.3.4]$ cd /home/work/lib/
+[work@VM-0-9-centos lib]$ wget https://github.com/msgpack/msgpack-php/archive/refs/tags/msgpack-2.1.2.tar.gz && tar -xvf msgpack-2.1.2.tar.gz && cd /home/work/lib/msgpack-php-msgpack-2.1.2/
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ make && make install
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ sed -i '$a \\nextension=msgpack.so' /home/work/service/php80/etc/php.ini
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Redis 扩展。  
+
+### 安装 uuid 扩展
+
+```sh
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ cd /home/work/lib/
+[work@VM-0-9-centos lib]$ wget https://pecl.php.net/get/uuid-1.2.0.tgz && tar -xvf uuid-1.2.0.tgz && cd /home/work/lib/uuid-1.2.0/
+[work@VM-0-9-centos uuid-1.2.0]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos uuid-1.2.0]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
+[work@VM-0-9-centos uuid-1.2.0]$ make && make install
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ sed -i '$a \\nextension=uuid.so' /home/work/service/php80/etc/php.ini
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 uuid 扩展。  
+
+### 安装 Kafka 扩展
+
+先安装 librdkafka：  
+
+```sh
+[work@VM-0-9-centos uuid-1.2.0]$ cd /home/work/lib/
+[work@VM-0-9-centos lib]$ wget https://github.com/edenhill/librdkafka/archive/refs/tags/v1.6.1.tar.gz
+[work@VM-0-9-centos lib]$ tar -xvf v1.6.1.tar.gz && cd librdkafka-1.6.1/
+[work@VM-0-9-centos librdkafka-1.6.1]$ ./configure --prefix=/home/work/php-extensions/librdkafka
+[work@VM-0-9-centos librdkafka-1.6.1]$ make && make install
+```
+
+再安装 rdkafka 扩展：  
+
+```sh
+[work@VM-0-9-centos librdkafka-1.6.1]$ cd /home/work/lib/
+[work@VM-0-9-centos lib]$ wget https://github.com/arnaud-lb/php-rdkafka/archive/refs/tags/5.0.0.tar.gz
+[work@VM-0-9-centos lib]$ tar -xvf 5.0.0.tar.gz && cd /home/work/lib/php-rdkafka-5.0.0
+[work@VM-0-9-centos php-rdkafka-5.0.0]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos php-rdkafka-5.0.0]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config --with-rdkafka=/home/work/php-extensions/librdkafka
+[work@VM-0-9-centos php-rdkafka-5.0.0]$ make && make install
+[work@VM-0-9-centos php-rdkafka-5.0.0]$ sed -i '$a \\nextension=rdkafka.so' /home/work/service/php80/etc/php.ini
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Kafka 扩展。  
+
+### 安装 Swoole 扩展
+
+```sh
+[work@VM-0-9-centos php-rdkafka-5.0.0]$ cd /home/work/lib/
+[work@VM-0-9-centos lib]$ wget https://github.com/swoole/swoole-src/archive/refs/tags/v4.6.4.tar.gz
+[work@VM-0-9-centos lib]$ tar -xvf v4.6.4.tar.gz && cd swoole-src-4.6.4
+[work@VM-0-9-centos swoole-src-4.6.4]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos swoole-src-4.6.4]$ ./configure --enable-openssl --enable-http2 --with-php-config=/home/work/service/php80/bin/php-config 
+[work@VM-0-9-centos swoole-src-4.6.4]$ make && make install
+[work@VM-0-9-centos swoole-src-4.6.4]$ sed -i '$a \\nextension=swoole.so' /home/work/service/php80/etc/php.ini
+```
+
+重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Swoole 扩展。  
+
 ### 常用命令
 
 如何启动 `php-fpm`？  
@@ -249,23 +345,3 @@ kill -USR2 pid
 ```sh
 /home/work/service/nginx/sbin/nginx -c /home/work/service/nginx/conf/nginx.conf -s reload
 ```
-
-### 安装 Redis 扩展
-
-```bash
-cd /home/work/lib/
-wget https://pecl.php.net/get/redis-5.3.4.tgz && tar -xvf redis-5.3.4.tgz && cd /home/work/lib/redis-5.3.4/
-/home/work/service/php80/bin/phpize
-./configure --with-php-config=/home/work/service/php80/bin/php-config
-sed -i '$a \\nextension=redis.so' /home/work/service/php80/etc/php.ini
-```
-
-重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Redis 扩展。  
-
-### 安装 apcu 扩展
-
-
-
-
-
-
