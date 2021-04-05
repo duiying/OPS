@@ -6,6 +6,7 @@
 - CentOS7
 
   - [CentOS7 初始化](common-software-install)
+  - [源码编译安装 Nginx、PHP8 以及 PHP 常见扩展](nginx-php-source-install)
   - [通过 yum 安装 Nginx](nginx-yum-install)
   - [通过 yum 安装 MySQL5.7](mysql57-yum-install)
   - [安装 docker、docker-compose](docker-yum-install)
