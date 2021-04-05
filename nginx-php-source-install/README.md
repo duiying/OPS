@@ -319,6 +319,28 @@ apc.enable_cli=on
 
 重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 Swoole 扩展。  
 
+### 安装 QConf 扩展
+
+安装这个扩展的时候比较坎坷，可能用到这个扩展的时候也不多，简单记录一下过程：  
+
+```sh
+git clone https://github.com/Qihoo360/QConf.git
+cd QConf/
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/home/work/php-extensions/qconf
+make && make install
+cd ../driver/php/
+/home/work/service/php80/bin/phpize
+./configure --with-php-config=/home/work/service/php80/bin/php-config --enable-static LDFLAGS=/home/work/php-extensions/qconf/lib/libqconf.a
+```
+
+安装过程中排错用到的文章：  
+
+- https://www.geek-share.com/detail/2700586114.html
+- https://blog.csdn.net/Damon_linux/article/details/80203549
+- https://github.com/Qihoo360/QConf/issues/16
+- https://blog.csdn.net/qq_35440678/article/details/62238293
+
 ### 常用命令
 
 如何启动 `php-fpm`？  
