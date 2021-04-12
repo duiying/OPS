@@ -32,6 +32,7 @@
   - [RabbitMQ 的搭建](docker/RabbitMQ-docker-install)
   - [MySQL 主从复制](https://github.com/duiying/dockerfiles/tree/master/mysql-master-slave)
   - [搭建 Redis-Cluster 三主三从以及集群的扩容缩容](https://github.com/duiying/dockerfiles/tree/master/redis-cluster)
+  - [搭建 Kafka 集群](https://github.com/duiying/dockerfiles/tree/master/kafka-cluster)
   
 - 常用脚本
 
