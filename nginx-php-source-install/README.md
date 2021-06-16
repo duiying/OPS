@@ -231,6 +231,7 @@ cd /home/work/lib/
 wget https://pecl.php.net/get/redis-5.3.4.tgz && tar -xvf redis-5.3.4.tgz && cd /home/work/lib/redis-5.3.4/
 /home/work/service/php80/bin/phpize
 ./configure --with-php-config=/home/work/service/php80/bin/php-config
+make && make install
 sed -i '$a \\nextension=redis.so' /home/work/service/php80/etc/php.ini
 ```
 
