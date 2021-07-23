@@ -1,6 +1,6 @@
 <h1 align="center"> OPS </h1>
-<p align="center"> 
-软件安装、环境部署、一键脚本等 
+<p align="center">
+软件安装、环境部署、一键脚本等
 </p>
 
 - CentOS7
@@ -23,7 +23,7 @@
   - [PostgreSQL 的安装](PostgreSQL)
   - [Sentry 的安装](Sentry)
   - [CentOS7 搭建 samba 实现与 Win 共享目录](samba)
-  
+
 - Docker
 
   - [通过 Docker 安装 MySQL5.7](docker/mysql57-docker-install)
@@ -33,13 +33,14 @@
   - [MySQL 主从复制](https://github.com/duiying/dockerfiles/tree/master/mysql-master-slave)
   - [搭建 Redis-Cluster 三主三从以及集群的扩容缩容](https://github.com/duiying/dockerfiles/tree/master/redis-cluster)
   - [搭建 Kafka 集群](https://github.com/duiying/dockerfiles/tree/master/kafka-cluster)
-  
+
 - 常用脚本
 
   - [SSH 免密码登录](Script/auto-password-ssh-login)
-    
+  - [如何使用 PHP 脚本来增量订阅错误日志？](Docs/如何使用PHP脚本来增量订阅错误日志？.md)
+  - [如何使用 PHP 脚本来保证其他进程的 KeepAlive？](Docs/如何使用PHP脚本来保证其他进程的KeepAlive？.md)
+  - [如何保证同一时刻只有一个 PHP 脚本在运行？](Docs/如何保证同一时刻只有一个PHP脚本在运行？.md)
+
 - Nginx
 
     - [Nginx 安装 ssl 证书](Nginx/ssl-install)
-    
-    
