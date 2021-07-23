@@ -61,3 +61,5 @@ function uniqueProcess()
     shell_exec($exec);
 }
 ```
+
+**后记**：其实可以引入更专业的工具，比如 Supervisor。  
