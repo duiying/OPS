@@ -7,10 +7,8 @@
 ```php
 #!/bin/env php
 <?php
-if (PHP_SAPI !== 'cli') {
-    exit('ONLY CLI' . PHP_EOL);
-}
 
+PHP_SAPI !== 'cli' && exit('ONLY CLI');
 set_time_limit(0);
 
 /********************************************* 常量定义 begin ***********************************************************/
@@ -24,11 +22,10 @@ const LOG_DIR               = '/data/logs/' . CURRENT_PROCESS_NAME . '/';
 
 // 保证进程唯一
 uniqueProcess();
-if (!file_exists(ERROR_LOG_PATH)) exit('日志文件不存在' . PHP_EOL);
 
 /********************************************* 逻辑 begin **************************************************************/
 // 错误日志当前行数
-$lastLine = count(file(ERROR_LOG_PATH));
+$lastLine = file_exists(ERROR_LOG_PATH) ? count(file(ERROR_LOG_PATH)) : 0;
 // 进程常驻，订阅错误日志
 while (true) {
     sleep(2);
@@ -43,7 +40,7 @@ function handle(&$lastLine)
     }
 
     // 当前行数
-    $nowLine = count(file(ERROR_LOG_PATH));
+    $nowLine = file_exists(ERROR_LOG_PATH) ? count(file(ERROR_LOG_PATH)) : 0;
 
     // 如果行数没有变化，直接返回
     if ($nowLine === $lastLine) return true;
