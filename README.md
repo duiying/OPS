@@ -23,6 +23,7 @@
   - [PostgreSQL 的安装](PostgreSQL)
   - [Sentry 的安装](Sentry)
   - [CentOS7 搭建 samba 实现与 Win 共享目录](samba)
+  - [Go 安装](go-install)
 
 - Docker
 

@@ -21,7 +21,7 @@
   - rdkafka
   - uuid
   - apcu
-  
+
 ### 准备
 
 目前准备了一台纯净的 CentOS7.5 的机器，首先安装一些基础的软件环境：  
@@ -190,12 +190,12 @@ server {
     server_name  localhost;
 
     root /home/work/www;
-    index index.html index.htm index.php;
-    
+    index index.php index.html index.htm;
+
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
-    
+
     location ~ \.php$ {
         fastcgi_pass 127.0.0.1:9000;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -313,7 +313,7 @@ apc.enable_cli=on
 [work@VM-0-9-centos lib]$ wget https://github.com/swoole/swoole-src/archive/refs/tags/v4.6.4.tar.gz
 [work@VM-0-9-centos lib]$ tar -xvf v4.6.4.tar.gz && cd swoole-src-4.6.4
 [work@VM-0-9-centos swoole-src-4.6.4]$ /home/work/service/php80/bin/phpize
-[work@VM-0-9-centos swoole-src-4.6.4]$ ./configure --enable-openssl --enable-http2 --with-php-config=/home/work/service/php80/bin/php-config 
+[work@VM-0-9-centos swoole-src-4.6.4]$ ./configure --enable-openssl --enable-http2 --with-php-config=/home/work/service/php80/bin/php-config
 [work@VM-0-9-centos swoole-src-4.6.4]$ make && make install
 [work@VM-0-9-centos swoole-src-4.6.4]$ sed -i '$a \\nextension=swoole.so' /home/work/service/php80/etc/php.ini
 ```
@@ -351,7 +351,7 @@ cd ../driver/php/
 ```
 
 如何重启 `php-fpm`？  
-     
+
 ```sh
 ps -ef | grep fpm
 kill -USR2 pid
