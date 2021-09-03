@@ -37,6 +37,7 @@
 
 - 常用脚本
 
+  - [定时清理日志脚本](Docs/定时清理日志脚本.md)
   - [SSH 免密码登录](Script/auto-password-ssh-login)
   - [如何使用 PHP 脚本来增量订阅错误日志？](Docs/如何使用PHP脚本来增量订阅错误日志？.md)
   - [如何使用 PHP 脚本来保证其他进程的 KeepAlive？](Docs/如何使用PHP脚本来保证其他进程的KeepAlive？.md)
