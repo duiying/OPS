@@ -24,6 +24,7 @@
   - [Sentry 的安装](Sentry)
   - [CentOS7 搭建 samba 实现与 Win 共享目录](samba)
   - [Go 安装](go-install)
+  - [Rsyslog 相关](Docs/Rsyslog相关.md)
 
 - Docker
 
