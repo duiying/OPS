@@ -39,7 +39,7 @@ systemctl enable supervisord.service
 vim /etc/supervisord.conf
 ```
 
-配置：  
+修改下面配置：  
 
 ```bash
 ...
@@ -58,7 +58,7 @@ serverurl=unix:///var/run/supervisor.sock ; use a unix:// URL  for a unix socket
 files = /etc/supervisor/conf.d/*.conf
 ```
 
-创建上面的文件：  
+然后创建上面的文件：  
 
 ```bash
 touch /var/run/supervisor.sock

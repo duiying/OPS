@@ -49,3 +49,31 @@ echo "===================================================="
 ```shell
 bash mysql57-yum-install.sh
 ```
+
+### 如何修改 root 密码？
+
+1、首先查看初始化的密码。  
+
+```sh
+cat /var/log/mysqld.log | grep 'temporary password'
+```
+
+2、用初始密码登录 MySQL，然后修改 root 的密码。  
+
+```sql
+ALTER user 'root'@'localhost' IDENTIFIED BY 'duiying*D123';
+```
+
+3、刷新权限。  
+
+```sql
+FLUSH PRIVILEGES;
+```
+
+4、允许其他主机连接 MySQL。  
+
+```sql
+use mysql;
+update user set host = '%' where user = 'root';
+FLUSH PRIVILEGES;
+```
