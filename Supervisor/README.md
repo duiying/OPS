@@ -123,7 +123,7 @@ supervisorctl reread
 supervisorctl update
 ```
 
-启动进程(其实不用手动启动也可以，因为前面test-process.conf中配置了在supervisord启动的时候也自动启动)
+启动进程（其实不用手动启动也可以，因为前面 `test-process.conf` 中配置了在 supervisord 启动的时候也自动启动）
 ```bash
 # -c参数指定配置文件路径，如果没有-c参数默认是/etc/supervisord.conf
 supervisorctl -c /etc/supervisord.conf start test-process:*
