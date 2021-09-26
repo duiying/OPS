@@ -77,3 +77,12 @@ use mysql;
 update user set host = '%' where user = 'root';
 FLUSH PRIVILEGES;
 ```
+
+### 如何设置 MySQL 开机自启动？
+
+```sh
+# 编辑文件
+vim /etc/rc.log
+# 在尾部新增下面这行
+service mysqld start
+```
