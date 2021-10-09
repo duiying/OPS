@@ -280,6 +280,35 @@ apc.enable_cli=on
 
 重启 `php-fpm`，通过访问：`IP:8000`，查看 phpinfo 中是否有 uuid 扩展。  
 
+### 安装 IPC 相关扩展（sysvsem、sysvshm、sysvmsg）
+
+在 PHP 中有这么一族函数，他们是对 UNIX 的 System V IPC 函数族的包装：  
+
+- sysvmsg 消息队列
+- sysvsem 信号量
+- sysvshm 共享内存
+
+```sh
+[work@VM-0-9-centos msgpack-php-msgpack-2.1.2]$ cd /home/work/lib/php-8.0.3/ext
+[work@VM-0-9-centos ext]$ cd sysvsem
+[work@VM-0-9-centos sysvsem]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos sysvsem]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
+[work@VM-0-9-centos sysvsem]$ make && make install
+[work@VM-0-9-centos sysvsem]$ sed -i '$a \\nextension=sysvsem.so' /home/work/service/php80/etc/php.ini
+
+[work@VM-0-9-centos sysvsem]$ cd ../sysvshm
+[work@VM-0-9-centos sysvshm]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos sysvshm]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
+[work@VM-0-9-centos sysvshm]$ make && make install
+[work@VM-0-9-centos sysvshm]$ sed -i '$a \\nextension=sysvshm.so' /home/work/service/php80/etc/php.ini
+
+[work@VM-0-9-centos sysvshm]$ cd ../sysvmsg
+[work@VM-0-9-centos sysvmsg]$ /home/work/service/php80/bin/phpize
+[work@VM-0-9-centos sysvmsg]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
+[work@VM-0-9-centos sysvmsg]$ make && make install
+[work@VM-0-9-centos sysvmsg]$ sed -i '$a \\nextension=sysvmsg.so' /home/work/service/php80/etc/php.ini
+```
+
 ### 安装 Kafka 扩展
 
 先安装 librdkafka：  
