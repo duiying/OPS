@@ -294,6 +294,7 @@ apc.enable_cli=on
 [work@VM-0-9-centos sysvsem]$ /home/work/service/php80/bin/phpize
 [work@VM-0-9-centos sysvsem]$ ./configure --with-php-config=/home/work/service/php80/bin/php-config
 [work@VM-0-9-centos sysvsem]$ make && make install
+# 下面这行可能不需要，可以执行 php -m 看一下 PHP 会不会报错：PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sysvsem.so'
 [work@VM-0-9-centos sysvsem]$ sed -i '$a \\nextension=sysvsem.so' /home/work/service/php80/etc/php.ini
 
 [work@VM-0-9-centos sysvsem]$ cd ../sysvshm
