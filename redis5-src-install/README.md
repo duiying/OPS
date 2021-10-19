@@ -52,6 +52,7 @@ cd /usr/src/redis-5.0.5/
 # 拷贝出一份自定义配置文件
 cp redis.conf myredis.conf
 # 修改配置文件 daemonize no => daemonize yes port 6379 => port 6397
+# 如何开启远程访问？将 bind 127.0.0.1 注释掉
 vim myredis.conf
 # 以指定配置文件启动 redis 服务
 cd /usr/src/redis-5.0.5/src
