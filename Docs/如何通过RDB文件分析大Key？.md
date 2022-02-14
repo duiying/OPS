@@ -19,7 +19,7 @@
 
 官方文档：https://github.com/xueqiu/rdr 。  
 
-在本地 Mac 下载 rdr 工具：https://github.com/xueqiu/rdr/releases/download/v0.0.1/rdr-darwin 。然后：  
+在本地 Mac 下载 rdr 工具：https://github.com/xueqiu/rdr/releases/download/v0.0.1/rdr-darwin 。然后执行：  
 
 ```sh
 chmod +x rdr-darwin
