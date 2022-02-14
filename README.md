@@ -25,6 +25,7 @@
   - [CentOS7 搭建 samba 实现与 Win 共享目录](samba)
   - [Go 安装](go-install)
   - [Rsyslog 相关](Docs/Rsyslog相关.md)
+  - [如何通过 RDB 文件分析大 Key？](Docs/如何通过RDB文件分析大Key？.md)
 
 - Docker
 
