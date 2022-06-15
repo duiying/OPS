@@ -3,6 +3,7 @@
 安装  
 
 ```bash
+brew update
 brew install mysql
 ```
 
