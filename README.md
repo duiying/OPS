@@ -30,6 +30,7 @@
 - Docker
 
   - [通过 Docker 安装 MySQL5.7](docker/mysql57-docker-install)
+  - [通过 Docker 安装 Redis5.0.8](docker/redis-docker-install)
   - [Gogs 的搭建](docker/Gogs-docker-install)
   - [Nginx 的搭建](docker/Nginx-docker-install)
   - [RabbitMQ 的搭建](docker/RabbitMQ-docker-install)
