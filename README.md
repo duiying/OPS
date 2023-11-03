@@ -26,6 +26,7 @@
   - [Go 安装](go-install)
   - [Rsyslog 相关](Docs/Rsyslog相关.md)
   - [如何通过 RDB 文件分析大 Key？](Docs/如何通过RDB文件分析大Key？.md)
+  - [安装 redis-cli](Docs/redis-cli.md)
 
 - Docker
 
